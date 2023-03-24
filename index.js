@@ -90,13 +90,11 @@ function plotGraph(data, type, city, year = "N/A") {
 
   let yearsData = []
   if (type == 'Days') {
-     dailyTemps = data.map(item => {
+    dailyTemps = data.map(item => {
       item = item['array_agg'].map(i => {
         x=parseFloat(i)
         return parseFloat(x.toFixed(2))
       })
-      return item
-    })
       return item
     })
     for (let i = 0; i < dailyTemps.length; i++) {
