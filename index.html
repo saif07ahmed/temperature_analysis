@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TEMPERATURE CHARTS</title>
+</head>
+<body>
+    <header>
+        <h1>AVERAGE TEMPERATURE VISUALIZATION FOR DIFFERENT CITIES</h1>
+    </header>
+    <section class="selectors">
+
+        <select name="" id="citySelect" onclick="" onchange="">
+            <option value="" selected>Select a City</option>
+        </select>
+        <select name="" id="typeSelect" onclick="" onchange="typeSelection()">
+            <option value="dayWise">Month Wise(Detailed)</option>
+            <option value="yearWise">Over the Years</option>
+            <option value="monthWise">Year Wise</option>
+        </select>
+        <select name="" id="yearSelect" style="display: none;" onclick="" onchange="">
+            <option value="" selected>Select Year</option>
+        </select>
+        <button onclick="visualise()">VISUALISE</button>
+    </section>
+    <section class="chart">
+        <div id="container"></div>   
+    </section>
+    <script src="index.js"></script>
+</body>
+</html>
