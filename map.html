@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://api.mapbox.com/mapbox-gl-js/v2.12.0/mapbox-gl.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+
+    <link
+      href="https://api.mapbox.com/mapbox-gl-js/v2.12.0/mapbox-gl.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./mapstyle.css" />
+    <title>Document</title>
+  </head>
+  <body style="overflow-x: hidden">
+    <form method="post" id="form">
+      <label for="#day">Day: </label>
+      <input type="number" min="1" max="31" step="1" value="25" id="day" />
+      <label for="#month">Month : </label>
+      <input type="number" min="0" max="12" step="1" value="6" id="month" />
+
+      <input type="submit" id="btnSubmit" />
+    </form>
+    <div id="map" style="width: 100%; height: 90vh"></div>
+
+    <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+
+    <script src="map.js"></script>
+  </body>
+</html>
